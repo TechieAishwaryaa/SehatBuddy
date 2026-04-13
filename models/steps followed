@@ -1,1 +1,6 @@
+We started with dataset selection:
+Mobifall was used for training of models as mobifall have data of sensors in different records. So data was segemented according to sensors one segment for accelrometer and one for gyroscopes.
+Two LSTM models were trained one of accelerometer and one omn gyroscope data both of the models will give certain probabilty of that record 
+one threshold is taken like acc_prob*0.3+gyro_prob > 0.5 then it is considered as fall scenarios the window is of size 50.
+
 
